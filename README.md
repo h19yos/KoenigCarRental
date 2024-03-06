@@ -1,10 +1,5 @@
 # Car Rental - Koenig
 
-## Requirements
-
-- The [Go](https://go.dev) programming language
-- A [PostgreSQL](https://www.postgresql.org) database
-
 ## Routes
 
 All application routes

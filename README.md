@@ -82,8 +82,6 @@ All application routes
     <br />
 - `PATCH /rentals/:id/cancel` used to cancel a rental `[requires auth]`
 
-[Insomnia import file](./insomnia.json)
-
 ## How to Authenticate
 
 The `/auth/register` and the `/auth/login` endpoints return an `accessToken`, send it as a Bearer token in the request, as the Authorization header, for example: `Bearer accessToken_here`

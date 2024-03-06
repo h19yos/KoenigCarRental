@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img {
+    flex: 1 1 21rem;
+}
+
+.about-text {
+    flex: 1 1 21rem;
+}
+
+.about-text span {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.main {
+    background: url(/src/images/imgonline-com-ua-Resize-AY8I6tlZZkGgJ.jpg);
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.history-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #fff;
+    text-align: center;
+    top: 0;
+    position: relative;
+    padding-top: 10%;
+
+}
+
+.history-text h2 {
+    font-size: 2.5rem;
+}
+
+.history-text p {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1 1 21rem;
+    justify-content: center;
+}

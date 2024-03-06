@@ -1,0 +1,288 @@
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+}
+
+section {
+    padding: 4rem 0 2rem;
+}
+
+.home {
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url(../../images//bmw_m4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+.home-text {
+    padding-left: 130px;
+}
+
+.home-text h1 {
+    font-size: 2.4rem;
+}
+
+.home-text p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+
+a.btn {
+    background: #0000001d;
+    color: #000;
+    font-weight: 400;
+}
+
+a.btn:hover {
+    color: #fff;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cars-container .box {
+    flex: 1 1 23rem;
+    position: relative;
+    height: 250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cars-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cars-container .box img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.cars-container .box a {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--text-color);
+    padding: 8px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.cars-container .box:hover a {
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px 100px;
+}
+
+.about-container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("/src/images/wallpaperflare.com_wallpaper\ \(1\).jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.about-contact-box{
+	max-width: 1100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: transparent;
+    padding-top: 5rem;
+}
+
+.about-left{
+	background: url("/src/images/wallpaperflare.com_wallpaper\ \(1\).jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.about-right{
+	padding: 10px;
+}
+
+.about-text {
+    flex: 1 1 21rem;
+}
+
+.about-text span {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.parts {
+    margin-top: 3%;
+}
+
+.parts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.parts-container .box {
+    flex: 1 1 23rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.parts-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+
+.parts-container .box h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.parts-container .box p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    right: 1rem;
+}
+
+.parts-container .box span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.parts-container .box .bx {
+    color: var(--main-color);
+    margin: 0.8rem 0;
+}
+
+.parts-container .box .btn {
+    max-width: 120px;
+}
+
+.parts-container .box .details {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.parts-container .box .details:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-container .box {
+    flex: 1 1 13rem;
+    padding: 20px;
+}
+
+.blog-container .box span {
+    font-size: 0.8rem;
+    color: var(--main-color);
+}
+
+.blog-container h3 {
+    font-size: 1.2rem;
+}
+
+.blog-container .box p {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.blog-container .box .blog-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: var(--text-color);
+}
+
+.blog-container .box .blog-btn .bx {
+    font-size: 20px;
+}
+
+.blog-container .box .blog-btn:hover {
+    color: var(--main-color);
+    column-gap: 0.7rem;
+    transition: 0.4s;
+}

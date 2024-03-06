@@ -1,95 +1,70 @@
-# Car Rental - Koenig
+# Getting Started with Create React App
 
-## Requirements
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- The [Go](https://go.dev) programming language
-- A [PostgreSQL](https://www.postgresql.org) database
+## Available Scripts
 
-## Routes
+In the project directory, you can run:
 
-All application routes
+### `npm start`
 
-### Brands
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- `GET /brands` used to get the list of all brands
-- `POST /brands` used to create a new brand
-  ###### Data (json):
-  - Name `[string, required]`
-    <br />
-- `GET /brands/:id` used to get a brand by id
-- `PUT /brands/:id` used to update a brand by id
-  ###### Data (json):
-  - Name `[string, required]`
-    <br />
-- `DELETE /brands/:id` used to delete a brand by id
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Cars
+### `npm test`
 
-- `GET /cars` used to get the list of all cars
-- `POST /cars` used to create a new car
-  ###### Data (json):
-  - BrandId `[uuid, required]`
-  - Model `[string, required]`
-  - RentalPriceDailyInUsd `[float, required]`
-  - HorsePower `[int, required]`
-  - TorqueInLb `[float, required]`
-  - TopSpeedInKm `[int, required]`
-  - AccelerationSpeedInKm `[float, required]`
-  - WeightInKg `[int, required]`
-    <br />
-- `GET /cars/:id` used to get a car by id
-- `PUT /cars/:id` used to update a car by id
-  ###### Data (json):
-  - BrandId `[uuid, required]`
-  - Model `[string, required]`
-  - RentalPriceDailyInUsd `[float, required]`
-  - HorsePower `[int, required]`
-  - TorqueInLb `[float, required]`
-  - TopSpeedInKm `[int, required]`
-  - AccelerationSpeedInKm `[float, required]`
-  - WeightInKg `[int, required]`
-    <br />
-- `DELETE /cars/:id` used to delete a car by id
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Auth
+### `npm run build`
 
-- `POST /auth/register` used to register new user
-  ###### Data (json):
-  - Name `[string, required]`
-  - Email `[string, required]`
-  - Password `[string, required]`
-    <br />
-- `POST /auth/login` used to login
-  ###### Data (json):
-  - Email `[string, required]`
-  - Password `[string, required]`
-    <br />
-- `GET /auth/me` used to get logged in user data `[requires auth]`
-- `GET /auth/me/rentals` used to get logged in user rentals `[requires auth]`
-  ###### Filters (query params):
-  - CarId - if specified it will return only the rentals for this CarId `[optional]`
-  - StartsAt - if specified it will return only the rentals that have a StartsAt greater than or equal to the specified date `[optional]`
-  - EndsAt - if specified it will return only the rentals that have an EndsAt lesser than or equal to the specified date `[optional]`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Rentals
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `GET /rentals` used to get the list of all rentals
-  ###### Filters (query params):
-  - CarId - if specified it will return only the rentals for this CarId `[optional]`
-  - StartsAt - if specified it will return only the rentals that have a StartsAt greater than or equal to the specified date `[optional]`
-  - EndsAt - if specified it will return only the rentals that have an EndsAt lesser than or equal to the specified date `[optional]`
-    <br />
-- `POST /rentals` used to rent a car `[requires auth]`
-  ###### Data (json)
-  - CarId - The id of the car you want to rent `[required]`
-  - StartsAt - The start date for which you want to rent the car `[required]`
-  - EndsAt - The end date for which you want to rent the car `[required]`
-    <br />
-- `PATCH /rentals/:id/cancel` used to cancel a rental `[requires auth]`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-[Insomnia import file](./insomnia.json)
+### `npm run eject`
 
-## How to Authenticate
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-The `/auth/register` and the `/auth/login` endpoints return an `accessToken`, send it as a Bearer token in the request, as the Authorization header, for example: `Bearer accessToken_here`
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
